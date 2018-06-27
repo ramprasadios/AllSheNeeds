@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.layer.contents = UIImage(named: "ASN_BG_IMG")?.cgImage
     }
 
     override func didReceiveMemoryWarning() {
