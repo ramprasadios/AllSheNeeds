@@ -101,11 +101,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hpu-b2-vW2">
+                                <rect key="frame" x="8" y="198.5" width="359" height="59.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All She Needs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-Nc-NPx">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="59.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xkV-Gv-ExC" firstAttribute="bottom" secondItem="HbT-AM-6WO" secondAttribute="bottom" id="2Ze-V2-jgB"/>
                             <constraint firstItem="2qs-S9-ttD" firstAttribute="trailing" secondItem="HbT-AM-6WO" secondAttribute="trailing" id="35z-oC-xZu"/>
+                            <constraint firstItem="hpu-b2-vW2" firstAttribute="leading" secondItem="HbT-AM-6WO" secondAttribute="leading" constant="8" id="3kl-A8-akD"/>
                             <constraint firstItem="HbT-AM-6WO" firstAttribute="bottom" secondItem="x5r-SM-S0x" secondAttribute="bottom" constant="8" id="47R-En-Jxt"/>
                             <constraint firstItem="xkV-Gv-ExC" firstAttribute="top" secondItem="2qs-S9-ttD" secondAttribute="bottom" constant="2" id="6IZ-HD-afK"/>
                             <constraint firstItem="3l5-bM-HlC" firstAttribute="leading" secondItem="E42-Lr-GZC" secondAttribute="leading" id="6yd-BL-qlu"/>
@@ -121,6 +133,8 @@
                             <constraint firstItem="0n3-9t-pRI" firstAttribute="leading" secondItem="HbT-AM-6WO" secondAttribute="leading" constant="20" id="mLy-f4-ccv"/>
                             <constraint firstItem="0n3-9t-pRI" firstAttribute="top" secondItem="E42-Lr-GZC" secondAttribute="bottom" constant="8" id="q83-am-M4Q"/>
                             <constraint firstItem="HbT-AM-6WO" firstAttribute="trailing" secondItem="x5r-SM-S0x" secondAttribute="trailing" constant="8" id="qql-iA-H3w"/>
+                            <constraint firstItem="3l5-bM-HlC" firstAttribute="top" secondItem="hpu-b2-vW2" secondAttribute="bottom" constant="50" id="trn-C8-Qwl"/>
+                            <constraint firstItem="HbT-AM-6WO" firstAttribute="trailing" secondItem="hpu-b2-vW2" secondAttribute="trailing" constant="8" id="vaK-hN-O09"/>
                             <constraint firstItem="HbT-AM-6WO" firstAttribute="trailing" secondItem="0n3-9t-pRI" secondAttribute="trailing" constant="20" id="xPV-Se-sF0"/>
                             <constraint firstItem="3l5-bM-HlC" firstAttribute="centerY" secondItem="zQb-wJ-z5R" secondAttribute="centerY" id="yA3-c6-5Yg"/>
                         </constraints>
