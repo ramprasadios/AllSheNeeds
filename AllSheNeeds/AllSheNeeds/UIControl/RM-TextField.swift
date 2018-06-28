@@ -35,12 +35,21 @@ class RM_TextField: UITextField {
         get {
             return self.borderEnabled
         }
-        set {
+        set {   
             self.borderEnabled = newValue
             self.setBottonBorder()
         }
     }
-
+    
+    /// Textfield placeholder color
+    @IBInspectable open var placeholderColor: UIColor? = UIColor.white.withAlphaComponent(0.5) {
+        didSet {
+            guard let placeholder = self.placeholder, let color = self.placeholderColor else { return }
+            let attributes = [NSAttributedStringKey.foregroundColor: color]
+            self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attributes)
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.initialUISetup()
@@ -68,7 +77,7 @@ class RM_TextField: UITextField {
 extension RM_TextField {
     
     func initialUISetup() {
-        self.setBottonBorder()
+        //self.setBottonBorder()
     }
     
     func setBottonBorder() {
