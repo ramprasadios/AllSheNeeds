@@ -9,7 +9,7 @@
 import UIKit
 
 class SignupViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,3 +22,8 @@ class SignupViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
 }
+
+extension SignupViewController {
+
+}
+

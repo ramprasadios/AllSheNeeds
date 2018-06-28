@@ -14,6 +14,8 @@
 		21AE2A2520DCC6F900AAF1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AE2A2320DCC6F900AAF1F0 /* LaunchScreen.storyboard */; };
 		21C261A020E376B00006C7BD /* UserRegistrationModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C2619F20E376AF0006C7BD /* UserRegistrationModule.storyboard */; };
 		21C261A320E37A6F0006C7BD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C261A220E37A6F0006C7BD /* SignupViewController.swift */; };
+		21C5A92E20E3E3B80095A726 /* RM-TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5A92D20E3E3B80095A726 /* RM-TextField.swift */; };
+		21C5A93120E3EDF60095A726 /* ASN_AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5A93020E3EDF60095A726 /* ASN_AppManager.swift */; };
 		46C0BFFB7CB2251D59A8629A /* Pods_AllSheNeeds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5368512A8A7C07B8511776E2 /* Pods_AllSheNeeds.framework */; };
 		D4906A8420E37BDB00986DC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4906A8320E37BDB00986DC1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 		21AE2A2620DCC6F900AAF1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21C2619F20E376AF0006C7BD /* UserRegistrationModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserRegistrationModule.storyboard; sourceTree = "<group>"; };
 		21C261A220E37A6F0006C7BD /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		21C5A92D20E3E3B80095A726 /* RM-TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RM-TextField.swift"; sourceTree = "<group>"; };
+		21C5A93020E3EDF60095A726 /* ASN_AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASN_AppManager.swift; sourceTree = "<group>"; };
 		35B60606CF34A680D7983FC8 /* Pods-AllSheNeeds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllSheNeeds.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllSheNeeds/Pods-AllSheNeeds.release.xcconfig"; sourceTree = "<group>"; };
 		5368512A8A7C07B8511776E2 /* Pods_AllSheNeeds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllSheNeeds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4906A8320E37BDB00986DC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 		21AE2A0B20DCC6F600AAF1F0 = {
 			isa = PBXGroup;
 			children = (
+				21C5A92F20E3EDBE0095A726 /* Utilities */,
 				21AE2A1620DCC6F700AAF1F0 /* AllSheNeeds */,
 				21AE2A1520DCC6F600AAF1F0 /* Products */,
 				3BE7970AB5C0F624E71911AA /* Pods */,
@@ -75,6 +80,7 @@
 		21AE2A1620DCC6F700AAF1F0 /* AllSheNeeds */ = {
 			isa = PBXGroup;
 			children = (
+				21C5A92C20E3E3A70095A726 /* UIControl */,
 				21C261A120E37A4F0006C7BD /* UserValidation */,
 				21C2619E20E3767E0006C7BD /* Storyboards */,
 				21AE2A1720DCC6F700AAF1F0 /* AppDelegate.swift */,
@@ -102,6 +108,23 @@
 				D4906A8320E37BDB00986DC1 /* LoginViewController.swift */,
 			);
 			path = UserValidation;
+			sourceTree = "<group>";
+		};
+		21C5A92C20E3E3A70095A726 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				21C5A92D20E3E3B80095A726 /* RM-TextField.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		21C5A92F20E3EDBE0095A726 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				21C5A93020E3EDF60095A726 /* ASN_AppManager.swift */,
+			);
+			name = Utilities;
+			path = AllSheNeeds/Utilities;
 			sourceTree = "<group>";
 		};
 		3BE7970AB5C0F624E71911AA /* Pods */ = {
@@ -209,10 +232,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AllSheNeeds/Pods-AllSheNeeds-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,7 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C5A92E20E3E3B80095A726 /* RM-TextField.swift in Sources */,
 				D4906A8420E37BDB00986DC1 /* LoginViewController.swift in Sources */,
+				21C5A93120E3EDF60095A726 /* ASN_AppManager.swift in Sources */,
 				21C261A320E37A6F0006C7BD /* SignupViewController.swift in Sources */,
 				21AE2A2020DCC6F700AAF1F0 /* AllSheNeeds.xcdatamodeld in Sources */,
 				21AE2A1820DCC6F700AAF1F0 /* AppDelegate.swift in Sources */,
