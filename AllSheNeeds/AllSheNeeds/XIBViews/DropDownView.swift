@@ -41,10 +41,10 @@ extension DropDownView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DropDownTableViewCell", for: indexPath) as? DropDownTableViewCell
-        cell?.textLabel?.textAlignment = .center
-        cell?.textLabel?.text = self.dataSource[indexPath.row]
-        return cell!
+        let cell = tableView.dequeCell(forIndexPath: indexPath) as DropDownTableViewCell
+        cell.textLabel?.textAlignment = .center
+        cell.textLabel?.text = self.dataSource[indexPath.row]
+        return cell
     }
 }
 

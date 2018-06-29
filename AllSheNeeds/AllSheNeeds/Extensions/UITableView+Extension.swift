@@ -16,7 +16,7 @@ extension UITableView {
         register(nib, forCellReuseIdentifier: T.reusableIdentifier)
     }
     
-    func dequeCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T where T: ReusableView {
+    func dequeCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T {
         guard let cell = self.dequeueReusableCell(withIdentifier: T.reusableIdentifier, for: indexPath) as? T else {
             fatalError("Could not deque cell with Identifier: \(T.reusableIdentifier)")
         }
