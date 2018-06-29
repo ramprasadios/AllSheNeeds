@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		21AE2A1820DCC6F700AAF1F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE2A1720DCC6F700AAF1F0 /* AppDelegate.swift */; };
-		21AE2A1A20DCC6F700AAF1F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE2A1920DCC6F700AAF1F0 /* ViewController.swift */; };
 		21AE2A1D20DCC6F700AAF1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AE2A1B20DCC6F700AAF1F0 /* Main.storyboard */; };
 		21AE2A2020DCC6F700AAF1F0 /* AllSheNeeds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21AE2A1E20DCC6F700AAF1F0 /* AllSheNeeds.xcdatamodeld */; };
 		21AE2A2220DCC6F900AAF1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AE2A2120DCC6F900AAF1F0 /* Assets.xcassets */; };
 		21AE2A2520DCC6F900AAF1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AE2A2320DCC6F900AAF1F0 /* LaunchScreen.storyboard */; };
+		21B4435220E4B00300B7E1C0 /* ASN_AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4435120E4B00300B7E1C0 /* ASN_AppManager.swift */; };
+		21B892D820E64A5900476564 /* ASN_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B892D720E64A5900476564 /* ASN_Constants.swift */; };
+		21C261A020E376B00006C7BD /* UserRegistrationModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C2619F20E376AF0006C7BD /* UserRegistrationModule.storyboard */; };
+		21C261A320E37A6F0006C7BD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C261A220E37A6F0006C7BD /* SignupViewController.swift */; };
+		21C5A92E20E3E3B80095A726 /* RM-TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5A92D20E3E3B80095A726 /* RM-TextField.swift */; };
+		21FD3F1A20E61819001AF09C /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FD3F1920E61819001AF09C /* DropDownView.xib */; };
+		21FD3F1C20E618F4001AF09C /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD3F1B20E618F4001AF09C /* DropDownView.swift */; };
+		21FD3F2020E61D5C001AF09C /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD3F1E20E61D5C001AF09C /* DropDownTableViewCell.swift */; };
+		21FD3F2120E61D5C001AF09C /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FD3F1F20E61D5C001AF09C /* DropDownTableViewCell.xib */; };
+		21FD3F2420E61D9D001AF09C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD3F2320E61D9D001AF09C /* UITableView+Extension.swift */; };
+		21FD3F2620E61E36001AF09C /* ASN_Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD3F2520E61E36001AF09C /* ASN_Protocols.swift */; };
+		46C0BFFB7CB2251D59A8629A /* Pods_AllSheNeeds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5368512A8A7C07B8511776E2 /* Pods_AllSheNeeds.framework */; };
+		D4906A8420E37BDB00986DC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4906A8320E37BDB00986DC1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		019F952A585630CBA5801AED /* Pods-AllSheNeeds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllSheNeeds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllSheNeeds/Pods-AllSheNeeds.debug.xcconfig"; sourceTree = "<group>"; };
 		21AE2A1420DCC6F600AAF1F0 /* AllSheNeeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllSheNeeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AE2A1720DCC6F700AAF1F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21AE2A1920DCC6F700AAF1F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21AE2A1C20DCC6F700AAF1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21AE2A1F20DCC6F700AAF1F0 /* AllSheNeeds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AllSheNeeds.xcdatamodel; sourceTree = "<group>"; };
 		21AE2A2120DCC6F900AAF1F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21AE2A2420DCC6F900AAF1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21AE2A2620DCC6F900AAF1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B4435120E4B00300B7E1C0 /* ASN_AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN_AppManager.swift; sourceTree = "<group>"; };
+		21B892D720E64A5900476564 /* ASN_Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASN_Constants.swift; sourceTree = "<group>"; };
+		21C2619F20E376AF0006C7BD /* UserRegistrationModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserRegistrationModule.storyboard; sourceTree = "<group>"; };
+		21C261A220E37A6F0006C7BD /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		21C5A92D20E3E3B80095A726 /* RM-TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RM-TextField.swift"; sourceTree = "<group>"; };
+		21FD3F1920E61819001AF09C /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		21FD3F1B20E618F4001AF09C /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		21FD3F1E20E61D5C001AF09C /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		21FD3F1F20E61D5C001AF09C /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
+		21FD3F2320E61D9D001AF09C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		21FD3F2520E61E36001AF09C /* ASN_Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASN_Protocols.swift; sourceTree = "<group>"; };
+		35B60606CF34A680D7983FC8 /* Pods-AllSheNeeds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllSheNeeds.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllSheNeeds/Pods-AllSheNeeds.release.xcconfig"; sourceTree = "<group>"; };
+		5368512A8A7C07B8511776E2 /* Pods_AllSheNeeds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllSheNeeds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4906A8320E37BDB00986DC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C0BFFB7CB2251D59A8629A /* Pods_AllSheNeeds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06D3D349AB3E48D711F79CB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5368512A8A7C07B8511776E2 /* Pods_AllSheNeeds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		21AE2A0B20DCC6F600AAF1F0 = {
 			isa = PBXGroup;
 			children = (
 				21AE2A1620DCC6F700AAF1F0 /* AllSheNeeds */,
 				21AE2A1520DCC6F600AAF1F0 /* Products */,
+				3BE7970AB5C0F624E71911AA /* Pods */,
+				06D3D349AB3E48D711F79CB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +93,15 @@
 		21AE2A1620DCC6F700AAF1F0 /* AllSheNeeds */ = {
 			isa = PBXGroup;
 			children = (
+				21B892D420E64A2B00476564 /* Helpers */,
+				21FD3F2220E61D7F001AF09C /* Extensions */,
+				21FD3F1D20E61D3C001AF09C /* TableViewCells */,
+				21FD3F1820E617EF001AF09C /* XIBViews */,
+				21B4435020E4B00300B7E1C0 /* Utilities */,
+				21C5A92C20E3E3A70095A726 /* UIControl */,
+				21C261A120E37A4F0006C7BD /* UserValidation */,
+				21C2619E20E3767E0006C7BD /* Storyboards */,
 				21AE2A1720DCC6F700AAF1F0 /* AppDelegate.swift */,
-				21AE2A1920DCC6F700AAF1F0 /* ViewController.swift */,
 				21AE2A1B20DCC6F700AAF1F0 /* Main.storyboard */,
 				21AE2A2120DCC6F900AAF1F0 /* Assets.xcassets */,
 				21AE2A2320DCC6F900AAF1F0 /* LaunchScreen.storyboard */,
@@ -67,6 +111,83 @@
 			path = AllSheNeeds;
 			sourceTree = "<group>";
 		};
+		21B4435020E4B00300B7E1C0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				21B4435120E4B00300B7E1C0 /* ASN_AppManager.swift */,
+				21FD3F2520E61E36001AF09C /* ASN_Protocols.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		21B892D420E64A2B00476564 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				21B892D720E64A5900476564 /* ASN_Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		21C2619E20E3767E0006C7BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				21C2619F20E376AF0006C7BD /* UserRegistrationModule.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		21C261A120E37A4F0006C7BD /* UserValidation */ = {
+			isa = PBXGroup;
+			children = (
+				21C261A220E37A6F0006C7BD /* SignupViewController.swift */,
+				D4906A8320E37BDB00986DC1 /* LoginViewController.swift */,
+			);
+			path = UserValidation;
+			sourceTree = "<group>";
+		};
+		21C5A92C20E3E3A70095A726 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				21C5A92D20E3E3B80095A726 /* RM-TextField.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		21FD3F1820E617EF001AF09C /* XIBViews */ = {
+			isa = PBXGroup;
+			children = (
+				21FD3F1920E61819001AF09C /* DropDownView.xib */,
+				21FD3F1B20E618F4001AF09C /* DropDownView.swift */,
+			);
+			path = XIBViews;
+			sourceTree = "<group>";
+		};
+		21FD3F1D20E61D3C001AF09C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				21FD3F1E20E61D5C001AF09C /* DropDownTableViewCell.swift */,
+				21FD3F1F20E61D5C001AF09C /* DropDownTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		21FD3F2220E61D7F001AF09C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21FD3F2320E61D9D001AF09C /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3BE7970AB5C0F624E71911AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				019F952A585630CBA5801AED /* Pods-AllSheNeeds.debug.xcconfig */,
+				35B60606CF34A680D7983FC8 /* Pods-AllSheNeeds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21AE2A2920DCC6F900AAF1F0 /* Build configuration list for PBXNativeTarget "AllSheNeeds" */;
 			buildPhases = (
+				1B0AAE15920D76A2EE1B4786 /* [CP] Check Pods Manifest.lock */,
 				21AE2A1020DCC6F600AAF1F0 /* Sources */,
 				21AE2A1120DCC6F600AAF1F0 /* Frameworks */,
 				21AE2A1220DCC6F600AAF1F0 /* Resources */,
+				D4723DCFDB59AF663BFED383 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +248,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21FD3F1A20E61819001AF09C /* DropDownView.xib in Resources */,
+				21C261A020E376B00006C7BD /* UserRegistrationModule.storyboard in Resources */,
 				21AE2A2520DCC6F900AAF1F0 /* LaunchScreen.storyboard in Resources */,
 				21AE2A2220DCC6F900AAF1F0 /* Assets.xcassets in Resources */,
+				21FD3F2120E61D5C001AF09C /* DropDownTableViewCell.xib in Resources */,
 				21AE2A1D20DCC6F700AAF1F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B0AAE15920D76A2EE1B4786 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllSheNeeds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4723DCFDB59AF663BFED383 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AllSheNeeds/Pods-AllSheNeeds-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllSheNeeds/Pods-AllSheNeeds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21AE2A1020DCC6F600AAF1F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21AE2A1A20DCC6F700AAF1F0 /* ViewController.swift in Sources */,
+				21C5A92E20E3E3B80095A726 /* RM-TextField.swift in Sources */,
+				D4906A8420E37BDB00986DC1 /* LoginViewController.swift in Sources */,
+				21FD3F2620E61E36001AF09C /* ASN_Protocols.swift in Sources */,
+				21FD3F2420E61D9D001AF09C /* UITableView+Extension.swift in Sources */,
+				21B892D820E64A5900476564 /* ASN_Constants.swift in Sources */,
+				21B4435220E4B00300B7E1C0 /* ASN_AppManager.swift in Sources */,
+				21FD3F1C20E618F4001AF09C /* DropDownView.swift in Sources */,
+				21C261A320E37A6F0006C7BD /* SignupViewController.swift in Sources */,
 				21AE2A2020DCC6F700AAF1F0 /* AllSheNeeds.xcdatamodeld in Sources */,
+				21FD3F2020E61D5C001AF09C /* DropDownTableViewCell.swift in Sources */,
 				21AE2A1820DCC6F700AAF1F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +457,7 @@
 		};
 		21AE2A2A20DCC6F900AAF1F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019F952A585630CBA5801AED /* Pods-AllSheNeeds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +475,7 @@
 		};
 		21AE2A2B20DCC6F900AAF1F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B60606CF34A680D7983FC8 /* Pods-AllSheNeeds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
