@@ -10,8 +10,16 @@ import UIKit
 
 class SignupViewController: UIViewController {
     
+    @IBOutlet weak var genderTextField: RM_TextField!
+    @IBOutlet weak var dobTextField: RM_TextField!
+    @IBOutlet weak var occupationTextField: RM_TextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.genderTextField.dataSource = ASNConstants.genders
+        self.occupationTextField.dataSource = ASNConstants.customerType
+        self.dobTextField.datePicker.maximumDate = Date()
     }
 
     override func didReceiveMemoryWarning() {

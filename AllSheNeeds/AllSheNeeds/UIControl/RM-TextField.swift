@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol TextFieldInteractionDelegate: class {
-    func textFieldBegin()
-    func textFieldCharacterChange(withString string: String)
+@objc
+protocol DropDownHandlerProtocol: NSObjectProtocol {
+    @objc func didSelect(rowAt indexPath: IndexPath, with text: String)
 }
 
 @IBDesignable
@@ -21,6 +21,21 @@ class RM_TextField: UITextField {
     
     var textFieldDataLabel: UILabel!
     var borderEnabled: Bool = true
+    
+    private var dropDownView: DropDownView?
+    
+    let datePicker: UIDatePicker = {
+        let dateDropDown = UIDatePicker()
+        dateDropDown.datePickerMode = .date
+        dateDropDown.addTarget(self, action: #selector(RM_TextField.datePicekerChanged(sender:)), for: .valueChanged)
+        return dateDropDown
+    }()
+    
+    open var dataSource: [String] = [] {
+        didSet {
+            self.dropDownView?.dataSource = dataSource
+        }
+    }
     
     @IBInspectable var leftViewImage: UIImage? {
         get {
@@ -47,6 +62,29 @@ class RM_TextField: UITextField {
             guard let placeholder = self.placeholder, let color = self.placeholderColor else { return }
             let attributes = [NSAttributedStringKey.foregroundColor: color]
             self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attributes)
+        }
+    }
+    
+    @IBInspectable open var isDropdown: Bool = false {
+        didSet {
+            if isDropdown {
+                self.dropDownView = Bundle.main.loadNibNamed(DropDownView.nibName, owner: nil, options: nil)?.first as? DropDownView
+                self.dropDownView?.dropDownTextFieldDelegate = self
+                self.inputView = self.dropDownView
+                self.reloadInputViews()
+            } else {
+                self.inputView = nil
+                self.reloadInputViews()
+            }
+        }
+    }
+    
+    @IBInspectable open var isDatePicker: Bool = false {
+        didSet {
+            if self.isDatePicker {
+                self.inputView = self.datePicker
+            }
+            self.reloadInputViews()
         }
     }
     
@@ -115,6 +153,19 @@ extension RM_TextField {
         view.addSubview(imageView)
 
         self.leftView = mainView
+    }
+    
+    @objc func datePicekerChanged(sender: UIDatePicker) {
+        self.text = sender.date.description
+    }
+}
+
+extension RM_TextField: DropDownHandlerProtocol {
+    
+    func didSelect(rowAt indexPath: IndexPath, with text: String) {
+        self.endEditing(true)
+        self.text = text
+        print("Cell Selected")
     }
 }
 
