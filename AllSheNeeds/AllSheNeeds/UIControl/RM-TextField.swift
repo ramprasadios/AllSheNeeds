@@ -46,16 +46,6 @@ class RM_TextField: UITextField {
         }
     }
     
-    @IBInspectable var isBorderHidden: Bool {
-        get {
-            return self.borderEnabled
-        }
-        set {   
-            self.borderEnabled = newValue
-            self.setBottonBorder()
-        }
-    }
-    
     /// Textfield placeholder color
     @IBInspectable open var placeholderColor: UIColor? = UIColor.white.withAlphaComponent(0.5) {
         didSet {
@@ -88,16 +78,6 @@ class RM_TextField: UITextField {
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initialUISetup()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialUISetup()
-    }
-    
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
@@ -113,26 +93,6 @@ class RM_TextField: UITextField {
 
 //MARK:- Initial Setup Methods
 extension RM_TextField {
-    
-    func initialUISetup() {
-        //self.setBottonBorder()
-    }
-    
-    func setBottonBorder() {
-        if !self.isBorderHidden {
-            self.borderStyle = .none
-            
-            let border = CALayer()
-            let width = CGFloat(2.0)
-            border.borderColor = UIColor.gray.cgColor
-            border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
-            
-            border.borderWidth = width
-            self.layer.addSublayer(border)
-            self.layer.masksToBounds = true
-            self.setNeedsDisplay()
-        }
-    }
     
     func addLeftView() {
         self.leftViewMode = .always
@@ -165,7 +125,6 @@ extension RM_TextField: DropDownHandlerProtocol {
     func didSelect(rowAt indexPath: IndexPath, with text: String) {
         self.endEditing(true)
         self.text = text
-        print("Cell Selected")
     }
 }
 
