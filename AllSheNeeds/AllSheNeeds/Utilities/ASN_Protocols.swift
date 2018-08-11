@@ -9,6 +9,17 @@
 import Foundation
 import UIKit
 
+protocol StoryBoardInstantinatable {
+    func instantinateViewController<T: UIViewController>(ofType type: ViewControllerType, of storyBoard: StoryBoardType) -> T
+}
+
+protocol RootSwitchable {
+    func setRootNavController(toType type: NavigationControllerType, ofStoryBoard storyBoard: StoryBoardType)
+}
+
+extension UIViewController: StoryBoardInstantinatable { }
+extension UIViewController: RootSwitchable { }
+
 protocol NibLoadableView: class {}
 
 extension NibLoadableView where Self: UIView {
