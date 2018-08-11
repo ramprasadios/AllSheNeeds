@@ -14,4 +14,7 @@ class ASNConstants {
     
     static let genders = ["Male", "Female", "Other"]
     static let customerType = ["Company / Organization", "Student"]
+    
+    
+    static let googleAPIKey = "447121333421-36bmljvr5q4hfn792r1rh50b2b04o0om.apps.googleusercontent.com"
 }

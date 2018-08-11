@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import GoogleSignIn
+
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        GIDSignIn.sharedInstance().clientID = ASNConstants.googleAPIKey
+        GIDSignIn.sharedInstance().delegate = self
         ASN_AppManager.configureDependancy()
         return true
     }
@@ -42,6 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
 
     // MARK: - Core Data stack
@@ -89,5 +100,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+//MARK:- Google Signin Methods:
+extension AppDelegate: GIDSignInDelegate {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+        } else {
+            // Perform any operations on signed in user here.
+                
+            // ...
+        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
 }
 
