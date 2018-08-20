@@ -10,6 +10,10 @@ import Foundation
 
 class ASNConstants {
     
+    enum UserState {
+        case login, logout
+    }
+    
     private init() {}
     
     static let genders = ["Male", "Female", "Other"]

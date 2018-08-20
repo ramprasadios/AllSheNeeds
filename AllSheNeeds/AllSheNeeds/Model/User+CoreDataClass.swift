@@ -41,4 +41,19 @@ public class User: NSManagedObject {
             print("Error Updaing Record \(error)")
         }
     }
+    
+    func setLoginStatus(with state: ASNConstants.UserState) {
+        guard let moc = CoreDataManager.default.managedObjectContext else { return }
+        switch state {
+        case .login:
+            self.loginStatus = true
+        case .logout:
+            self.loginStatus = false
+        }
+        do {
+            try moc.save()
+        } catch let error {
+            print("Error Updaing Record \(error)")
+        }
+    }
 }

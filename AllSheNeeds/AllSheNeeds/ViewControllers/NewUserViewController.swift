@@ -35,6 +35,10 @@ extension NewUserViewController {
     
     func handleUserNavigation() {
         guard let user = User.getUser(), !user.firstTime else { return }
-        self.setRootNavController(toType: .loginNavigation, ofStoryBoard: .login)
+        if user.loginStatus {
+            self.setRootNavController(toType: .homeNavigation, ofStoryBoard: .home)
+        } else {
+            self.setRootNavController(toType: .loginNavigation, ofStoryBoard: .login)
+        }
     }
 }

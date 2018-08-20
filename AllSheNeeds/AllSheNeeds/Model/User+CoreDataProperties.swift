@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  AllSheNeeds
 //
-//  Created by Ramprasad A on 11/08/18.
+//  Created by Ramprasad A on 20/08/18.
 //  Copyright © 2018 Ramprasad A. All rights reserved.
 //
 //
@@ -18,5 +18,6 @@ extension User {
     }
 
     @NSManaged public var firstTime: Bool
+    @NSManaged public var loginStatus: Bool
 
 }

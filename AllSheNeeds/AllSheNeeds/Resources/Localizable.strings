@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  AllSheNeeds
+
+  Created by Ramprasad A on 16/08/18.
+  Copyright © 2018 Ramprasad A. All rights reserved.
+*/
+
+//Validation
+
+"FORGOT_PASSWORD" = "Forgot Password..?";
+"EMAIL_PLACEHOLDER" = "Enter your e-mail";
+"EMAIL_ADDRESS_EMPTY" = "Please Enter the Email Address";
+"MOBILE_NUMBER_EMPTY" = "Please Enter Mobile Number";
+"PASSWORD_EMPTY" = "Please Enter Password";
+"FIRST_NAME_EMPTY" = "Please Enter First Name";
+"LAST_NAME_EMPTY" = "Please Enter Last Name";
+"DOB_EMPTY" = "Please Enter DOB";
+"GENDER_EMPTY" = "Please Enter Gender";
+"INVALID_EMAIL" = "Please Enter Valid E-Mail Id";
+"INVALID_MOBILE" = "Please Enter Valid Mobile Number";
+
+
+//Responses
+
+"FORGOT_PASSWORD_EMIAL_ALERT" = "Please Enter your registered e-mail, you will get the password reset link";

@@ -11,12 +11,11 @@ import UIKit
 
 enum NavigationControllerType: String {
     case loginNavigation = "LoginNavigationController"
-    case homeNavigation = "HomeNavigationController"
+    case homeNavigation = "HomeTabBarController"
 }
 
 enum ViewControllerType: String {
     
-    case home = "HomeViewController"
     case login = "LoginViewController"
     case signup = "RegistrationViewController"
 }
