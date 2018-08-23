@@ -19,4 +19,9 @@ class ASN_AppManager: NSObject {
         
         IQKeyboardManager.shared.enable = true
     }
+    
+    static func logoutUser() {
+        guard let user = User.getUser(), !user.firstTime else { return }
+        user.setLoginStatus(with: .logout)
+    }
 }
