@@ -16,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASN_START_ICON" translatesAutoresizingMaskIntoConstraints="NO" id="nEP-wS-Mgg">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="ASN_START_ICON" translatesAutoresizingMaskIntoConstraints="NO" id="nEP-wS-Mgg">
                     <rect key="frame" x="110" y="13" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="KpB-gX-IqI"/>
-                        <constraint firstAttribute="height" constant="100" id="dVU-Oi-JYd"/>
+                        <constraint firstAttribute="height" priority="750" constant="100" id="Vqv-np-hfX"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaQ-bo-vsF">
@@ -51,6 +51,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2un-M0-AtS" secondAttribute="bottom" constant="8" id="Dta-e0-Rda"/>
                 <constraint firstItem="2un-M0-AtS" firstAttribute="trailing" secondItem="ISn-Jr-egy" secondAttribute="trailing" id="M5g-N5-N6m"/>
                 <constraint firstItem="nEP-wS-Mgg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VPa-dx-0ST"/>
+                <constraint firstItem="nEP-wS-Mgg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="aRC-Ql-6ST"/>
                 <constraint firstItem="2un-M0-AtS" firstAttribute="top" secondItem="ISn-Jr-egy" secondAttribute="bottom" constant="2.5" id="fpJ-L1-oAc"/>
                 <constraint firstItem="ISn-Jr-egy" firstAttribute="top" secondItem="nEP-wS-Mgg" secondAttribute="bottom" constant="16" id="nex-Tt-dUe"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ISn-Jr-egy" secondAttribute="trailing" constant="8" id="nng-6z-42S"/>

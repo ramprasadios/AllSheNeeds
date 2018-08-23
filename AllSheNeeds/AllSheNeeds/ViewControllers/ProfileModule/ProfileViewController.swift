@@ -23,10 +23,24 @@ class ProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if let tableHeaderView = profileDataTableView.tableHeaderView {
+            let height = tableHeaderView.systemLayoutSizeFitting(UILayoutFittingExpandedSize).height
+            var headerFrame = tableHeaderView.frame
+            
+            if height != headerFrame.size.height {
+                headerFrame.size.height = height
+                tableHeaderView.frame = headerFrame
+                profileDataTableView.tableHeaderView = tableHeaderView
+            }
+        }
+    }
+    
     func initalSetup() {
         guard let headerView = Bundle.main.loadNibNamed("ProfileHeaderView", owner: self, options: nil)?.first as? UIView else { return }
         self.profileDataTableView.tableHeaderView = headerView
-        self.profileDataTableView.layoutIfNeeded()
     }
 }
 

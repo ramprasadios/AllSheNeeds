@@ -18,6 +18,8 @@ class ASNConstants {
         case myOrders = "My Orders"
         case feedback = "Feedback"
         case settings = "Settings"
+        case rating = "Rate Us"
+        case share = "Share App"
         case logout = "Logout"
     }
     
