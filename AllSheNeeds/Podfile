@@ -8,5 +8,7 @@ target 'AllSheNeeds' do
   # Pods for AllSheNeeds
   pod 'Alamofire', '~> 4.7'
   pod 'IQKeyboardManagerSwift'
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 
 end
