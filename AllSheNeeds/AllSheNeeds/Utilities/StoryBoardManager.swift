@@ -18,6 +18,14 @@ enum ViewControllerType: String {
     
     case login = "LoginViewController"
     case signup = "RegistrationViewController"
+    case categories = "CategoriesViewController"
+    case container = "ContainerViewController"
+    case dashboard = "DashboardViewController"
+    case forHer = "ForHerProductsViewController"
+    case newUser = "NewUserViewController"
+    case contactUs = "ContactUsViewController"
+    case prodDetails = "ProductDetailViewController"
+    case cartVc = "CartViewController"
 }
 
 enum StoryBoardType: String {

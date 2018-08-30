@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
                     if fbLoginResult.isCancelled {
                         return
                     } else if fbLoginResult.grantedPermissions.contains("email") {
+                        self.fetchUserProfileInfo()
                         print("Authentication Successful")
                     }
                 }
@@ -68,6 +69,26 @@ class LoginViewController: UIViewController {
             self.showNormalAlert(withTitle: "Error...!", andMessage: result.error.localizedDescription)
             print(result.error.localizedDescription)
         }
+    }
+}
+
+//MARK:- Helper Methods:
+extension LoginViewController {
+    
+    func fetchUserProfileInfo() {
+        let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, email, name"])
+        let _ = graphRequest?.start(completionHandler: { (connection, result, error) in
+            if error != nil {
+                print("Error fetching user Info \(String(describing: error?.localizedDescription))")
+            } else {
+                print("Entire Data Fetched: \(String(describing: result))")
+                if let userData = result as? [String: AnyObject] {
+                    if let userName = userData["name"] as? String {
+                        print("User Name: \(userName)")
+                    }
+                }
+            }
+        })
     }
 }
 

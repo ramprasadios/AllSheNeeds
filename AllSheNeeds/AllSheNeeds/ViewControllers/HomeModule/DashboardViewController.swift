@@ -56,9 +56,7 @@ class DashboardViewController: UIViewController {
 extension DashboardViewController: ChildEventHandlerProtocol {
     
     func eventTriggered(ofType type: ASNConstants.EventType) {
-        guard let productDetailVc = self.storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") else { return }
+        let productDetailVc = self.instantinateViewController(ofType: .categories, of: .home)
         self.navigationController?.pushViewController(productDetailVc, animated: true)
     }
-    
-    
 }

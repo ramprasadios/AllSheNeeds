@@ -77,6 +77,9 @@ extension ProfileViewController {
         case .logout:
             ASN_AppManager.logoutUser()
             self.setRootNavController(toType: .loginNavigation, ofStoryBoard: .login)
+        case .myCart:
+            let cartVc = self.instantinateViewController(ofType: .cartVc, of: .home)
+            self.navigationController?.pushViewController(cartVc, animated: true)
         default:
             break
         }

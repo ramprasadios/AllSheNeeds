@@ -16,6 +16,7 @@ class ASNConstants {
     
     enum ProfileActions: String {
         case myOrders = "My Orders"
+        case myCart = "My Cart"
         case feedback = "Feedback"
         case settings = "Settings"
         case rating = "Rate Us"
@@ -29,8 +30,7 @@ class ASNConstants {
     
     private init() {}
     
-    static let genders = ["Male", "Female", "Other"]
-    static let profileOptionsList = ["My Orders", "Feedback", "Settings", "Logout"]
+    static let genders = ["Male", "Female"]
     static let customerType = ["Company / Organization", "Student"]
     
     

@@ -10,6 +10,8 @@ import UIKit
 
 class ForHerProductsViewController: UIViewController {
     
+    @IBOutlet var categoryTypes: [UIButton]!
+    
     weak var eventHandlerDelegate: ChildEventHandlerProtocol?
 
     override func viewDidLoad() {
